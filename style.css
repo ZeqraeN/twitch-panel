@@ -1,0 +1,180 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+html,body{
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+.sosyalmedya {
+  width: 400px;
+  float: left;
+  position: relative;
+  height: 75px;
+  overflow: hidden;
+  position: absolute;
+  left: 30px;
+  bottom: 30px;
+}
+
+.sm {
+  width: 0;
+  float: left;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+.sm em{
+  width: 75px;
+  height: 75px;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  -o-border-radius: 100%;
+  -ms-border-radius: 100%;
+  border-radius: 100%;
+  flex-shrink: 0;
+}
+.sm em img{
+  max-width: 70%;
+  max-height: 70%;
+}
+.sm span{
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  flex-direction: column;
+  margin-left: 10px;
+}
+.sm span b{
+  width: 100%;
+  white-space: nowrap;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  font-weight: 700;
+  margin-left: 7px;
+}
+.sm span p{
+  width: 100%;
+  white-space: nowrap;
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 700;
+}
+.behance em{
+  background: #3463D9;
+}
+.behance span b{
+  color: #3463D9;
+}
+.facebook em{
+  background: #334E87;
+}
+.facebook span b{
+  color: #3B5998;
+}
+.instagram em{
+  background: #B5228E;
+}
+.instagram span b{
+  color: #F94FCC;
+}
+.twitter em{
+  background: #3E8AC4;
+}
+.twitter span b{
+  color: #55ACEE;
+}
+.linkedin em{
+  background: #086697;
+}
+.linkedin span b{
+  color: #007AB9;
+}
+.behance{
+  animation: 8s behance alternate;
+}
+.facebook{
+  animation: 8s behance alternate;
+  animation-delay: 8s;
+}
+.instagram{
+  animation: 8s behance alternate;
+  animation-delay: 16s;
+}
+.twitter{
+  animation: 8s behance alternate;
+  animation-delay: 24s;
+}
+.linkedin{
+  animation: 8s behance alternate;
+  animation-delay: 32s;
+}
+.behance em{
+  animation: 8s em;
+}
+.facebook em{
+  animation: 8s em;
+  animation-delay: 8s;
+}
+.instagram em{
+  animation: 8s em;
+  animation-delay: 16s;
+}
+.twitter em{
+  animation: 8s em;
+  animation-delay: 24s;
+}
+.linkedin em{
+  animation: 8s em;
+  animation-delay: 32s;
+}
+@keyframes em{
+  0%{
+    width: 0;
+    height: 0;
+  }
+  10%{
+    width: 75px;
+    height: 75px;
+  }
+  10%, 80%{
+    width: 75px;
+    height: 75px;
+  }
+  100%{
+    width: 0;
+    height: 0;
+  }
+}
+@keyframes behance{
+  0%{
+    width: 0;
+  }
+  10%{
+    width: 75px;
+  }
+  40%{
+    width: 400px;
+  }
+  40%, 70%{
+    width: 400px;
+  }
+  100%{
+    width: 0;
+  }
+}
